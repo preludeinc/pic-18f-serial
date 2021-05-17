@@ -29,7 +29,7 @@ unsigned char keypad(void)
 	Nop();
 	Nop();
 	
-  if(!PORTBbits.RB4)return('1');      // checking the first row of the keypad
+  if(!PORTBbits.RB4)return('1');            // checking the first row of the keypad
 	if(!PORTBbits.RB5)return('4');
 	if(!PORTBbits.RB6)return('7');
 	if(!PORTBbits.RB7)return('*');
@@ -38,7 +38,7 @@ unsigned char keypad(void)
 	Nop();
 	Nop();
 	
-  if(!PORTBbits.RB4)return('2');      // checking the second row of the keypad
+  if(!PORTBbits.RB4)return('2');             // checking the second row of the keypad
 	if(!PORTBbits.RB5)return('5');
 	if(!PORTBbits.RB6)return('8');
 	if(!PORTBbits.RB7)return('0');
@@ -47,7 +47,7 @@ unsigned char keypad(void)
 	Nop();
 	Nop();
 	
-  if(!PORTBbits.RB4)return('3');      // checking the third row of the keypad
+  if(!PORTBbits.RB4)return('3');            // checking the third row of the keypad
 	if(!PORTBbits.RB5)return('6');	
 	if(!PORTBbits.RB6)return('9');
 	if(!PORTBbits.RB7)return('#');
@@ -56,12 +56,12 @@ unsigned char keypad(void)
 	Nop();
 	Nop();
 	
-  if(!PORTBbits.RB4)return('A');       // checking the fourth row of the keypad
+  if(!PORTBbits.RB4)return('A');            // checking the fourth row of the keypad
 	if(!PORTBbits.RB5)return('B');
 	if(!PORTBbits.RB6)return('C');
 	if(!PORTBbits.RB7)return('D');
 
-	return(0);                           // no valid key pressed, exit switch case
+	return(0);                          // if no valid key is pressed, exit switch case
 } // end keypad())
 
 // keypad de-bounce function
@@ -71,7 +71,7 @@ unsigned char key_press(void)
     
     if (key_press !=0) {
         __delay_ms(30);
-        while (keypad()!=0);            // waiting for key to be released
+        while (keypad()!=0);               // waiting for key to be released
         __delay_ms(30);
     }
     return key_press;
