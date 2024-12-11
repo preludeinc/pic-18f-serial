@@ -1,1 +1,3 @@
-An external circuit involving a Matrix 4x4 keypad, a Hitachi LCD, and the eight-bit PIC18F4685 on an external breadboard has been wired together alongside this project. User entered data (via the 4x4 Matrix keypad) is sent serially through the PIC's built-in transmit (TX) and receive (RX). Pressing 'A' on the keypad scrolls text to the right, 'B' acts as a back-space, 'C' clears the LCD, and 'D' scrolls text to the left.
+Wired an external circuit using a Matrix 4x4 keypad, a Hitachi LCD, and an eight-bit PIC18F4685. User entered data (via the 4x4 Matrix keypad) is sent serially through the PIC's built-in transmit (TX) and receive (RX) functionality. Keypad keys provide functionality for scrolling, back-space, and clearing LCD. 
+
+![Simple Computer](https://github.com/user-attachments/assets/423e4db4-d801-46b2-ad69-5dec0d61e083)
